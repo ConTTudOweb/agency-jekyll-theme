@@ -9,7 +9,9 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">{{site.title}}</a>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <img src="img/communicare_logo_228x39_white.png" class="img-responsive" alt="{{site.title}}">
+                </a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -19,19 +21,19 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Services</a>
+                        <a class="page-scroll" href="#treinamentos">Treinamento</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                        <a class="page-scroll" href="#eventos">Eventos</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
+                        <a class="page-scroll" href="#equipe">Equipe</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#team">Team</a>
+                        <a class="page-scroll" href="#sobre">Sobre Nós</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a class="page-scroll" href="#contato">Contato</a>
                     </li>
                 </ul>
             </div>
@@ -44,9 +46,15 @@
     <header>
         <div class="container">
             <div class="intro-text">
-                <div class="intro-lead-in">Welcome To Our Studio!</div>
-                <div class="intro-heading">It's Nice To Meet You</div>
-                <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
+
+                <!--<div class="intro-lead-in"></div>-->
+                <div class="bg-darkest-gray">
+                    <blockquote cite="ARISTÓTELES">
+                        “Somos o que repetidamente fazemos.<br>A excelência, portanto, não é um feito, mas um hábito”.<br>
+                        <small><i>ARISTÓTELES</i></small>
+                    </blockquote>
+                </div>
+                <a href="#treinamentos" class="page-scroll btn btn-xl">Veja mais...</a>
             </div>
         </div>
     </header>
@@ -55,4 +63,3 @@
           {% if page.title %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}
         {% endfor %}
  -->
-

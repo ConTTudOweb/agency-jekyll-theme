@@ -1,4 +1,6 @@
 _site
+.venv
+.idea
 
 # Windows image file caches
 Thumbs.db

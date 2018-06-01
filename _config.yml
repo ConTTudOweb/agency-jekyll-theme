@@ -1,28 +1,31 @@
-url: https://y7kim.github.io
-baseurl: /agency-jekyll-theme/
+url: https://conttudoweb.github.io
+baseurl: /communicare_v1
 
 # Site settings
-title: Awesome Title
-email: your-email@domain.com
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+title: Communicare Treinamentos
+site_link: www.communicaretreinamentos.com.br
+email: contato@communicaretreinamentos.com.br
+description: "Centro de Treinamentos Communicare em Apucarana."
 
 
 # Team names, titles and social links
 people:
-- name: Kay Garland
-  pic: 1
-  position: Lead Designer
+- name: Vinícius
+  gravatar: https://www.gravatar.com/avatar/f5acb91dd8c79d55830816eea7d12b60
+  position: CEO | Coach
   social:
     - title: twitter
       url: #
     - title: facebook
       url: #
-    - title: stack-overflow
+    - title: linkedin
+      url: #
+    - title: google-plus
       url: #
 
-- name: Larry Parker
-  pic: 2
-  position: Lead Marketer
+- name: Alessandro
+  gravatar: https://www.gravatar.com/avatar/399d48b39ef431d4552a7be1e6947ae7
+  position: CTO | Developer
   social:
     - title: twitter
       url: #
@@ -31,34 +34,19 @@ people:
     - title: linkedin
       url: #
 
-- name: Diana Petersen
-  pic: 3
-  position: Lead Developer
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: google-plus
-      url: #
-
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: twitter
-    url: http://twitter.com/jekyllrb
+    url: https://twitter.com/CommunicareBR
   - title: facebook
-    url:
-  - title: stack-overflow
-    url: http://stackoverflow.com/questions/tagged/jekyll
-  - title: bitbucket 
-    url: http://bitbucket.org/jekyll
-  - title: github
-    url: http://github.com/jekyll
+    url: https://www.facebook.com/CommunicareTreinamentos
+  - title: instagram
+    url: https://www.instagram.com/CommunicareTreinamentos
 
 # Postal address (add as many lines as necessary)
 address:
-  - line: 3481 Melrose Place
-  - line: Beverly Hills, CA 90210
+  - line: Apucarana - PR
+  - line: Brasil
 
 # Build settings
 markdown: kramdown

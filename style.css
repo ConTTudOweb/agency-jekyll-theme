@@ -1,3 +1,33 @@
 ---
 layout: style
 ---
+
+header {
+    opacity: 0.9;
+}
+
+.container {
+    opacity: 1;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.8);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.8);
+}
+
+/* Add some padding inside the card container */
+.card-container {
+    padding: 2px 16px;
+}
+
+.card-dark-gradiente {
+    /*background-color: darkgray;*/
+    /*background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);*/
+    background: linear-gradient(141deg, #aab8b6 0%, #bddadb 51%, #b3cee8 75%);
+}
