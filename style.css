@@ -4,7 +4,8 @@ layout: style
 
 header {
     opacity: 0.9;
-    background-image: url('{{ site.baseurl }}/img/header-bg6.jpg') !important;
+    background-position: top center;
+    /*background-image: url('{{ site.baseurl }}/img/header-bg6.jpg') !important;*/
 }
 
 .footer-block {
