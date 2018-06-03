@@ -4,6 +4,17 @@ layout: style
 
 header {
     opacity: 0.9;
+    background-image: url('{{ site.baseurl }}/img/header-bg6.jpg') !important;
+}
+
+.footer-block {
+    padding-top: 5px;
+}
+
+@media (min-width: 768px) {
+    .navbar-dark {
+        background-color: #00000099;
+    }
 }
 
 .container {
