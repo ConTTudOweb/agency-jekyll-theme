@@ -47,3 +47,11 @@ header {
 blockquote {
     border-left: 0px solid #ecf0f1;
 }
+
+/* WHATSAPP FIXO */
+.whatsapp-fixo {
+    position: fixed;
+    bottom:10px;
+    right:10px;
+    z-index: 999;
+}
