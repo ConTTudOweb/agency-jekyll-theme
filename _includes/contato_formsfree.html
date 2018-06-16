@@ -9,39 +9,30 @@
             <div class="row">
 
                 <div class="col-md-7 col-lg-6" style="padding-right: 30px;">
-
-                    <script>window.jQuery||document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"><\/script>')</script>
-                    <script type="text/javascript">var contactSubmitted=false;</script>
-
-                    <form name="gformContact" id="gformContact" enctype="text/plain"
-                          action="https://docs.google.com/forms/d/e/1FAIpQLSeRnCQjV6953bcuNdycMHChcO6Vw1rmCPln0-SQR3LMN5Sbzg/formResponse?"
-                          target="hidden_iframe" onsubmit="contactSubmitted=true;">
-
-                        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(contactSubmitted) {}"></iframe>
-                    <!--<form action="https://formspree.io/contato@communicaretreinamentos.com.br" method="POST" class="validate">-->
+                    <form action="https://formspree.io/contato@communicaretreinamentos.com.br" method="POST" class="validate">
                         <div class="indicates-required text-primary pull-right"><span class="asterisk">*</span> campos obrigatórios</div>
                         <div class="control-group form-group">
-                            <label for="entry.1108926500" class="text-primary">Nome  <span class="asterisk">*</span></label>
-                            <input type="text" value="" name="entry.1108926500" class="required form-control" id="entry.1108926500" required>
+                            <label for="NAME" class="text-primary">Nome  <span class="asterisk">*</span></label>
+                            <input type="text" value="" name="FNAME" class="required form-control" id="NAME" required>
                         </div>
                         <div class="control-group form-group">
-                            <label for="entry.1200432122" class="text-primary">E-mail  <span class="asterisk">*</span></label>
-                            <input type="email" value="" name="entry.1200432122" class="required email form-control" id="entry.1200432122" required>
+                            <label for="EMAIL" class="text-primary">E-mail  <span class="asterisk">*</span></label>
+                            <input type="email" value="" name="_replyto" class="required email form-control" id="EMAIL" required>
                         </div>
                         <div class="control-group form-group">
-                            <label for="entry.1149200742" class="text-primary">Telefone</label>
-	                        <input type="tel" name="entry.1149200742" class="form-control" value="" id="entry.1149200742">
+                            <label for="PHONE" class="text-primary">Telefone</label>
+	                        <input type="tel" name="PHONE" class="form-control" value="" id="PHONE">
                         </div>
 
                         <div class="control-group form-group">
-                            <label for="entry.1966700659" class="text-primary">Mensagem </label>
-                            <textarea type="text" value="" name="entry.1966700659" class="form-control" id="entry.1966700659"></textarea>
+                            <label for="MESSAGE" class="text-primary">Mensagem </label>
+                            <textarea type="text" value="" name="MESSAGE" class="form-control" id="MESSAGE"></textarea>
                         </div>
 
-                        <!--<input type="hidden" name="_next" value="#" />-->
-                        <!--<input type="hidden" name="_subject" value="Contato pelo site!" />-->
-                        <!--<input type="hidden" name="_language" value="pt-BR" />-->
-                        <!--<input type="text" name="_gotcha" style="display:none" />-->
+                        <input type="hidden" name="_next" value="#" />
+                        <input type="hidden" name="_subject" value="Contato pelo site!" />
+                        <input type="hidden" name="_language" value="pt-BR" />
+                        <input type="text" name="_gotcha" style="display:none" />
 
                         <div id="mce-responses" class="clear">
                             <div class="response text-danger" id="mce-error-response" style="display:none"></div>
@@ -52,17 +43,6 @@
                             <input type="submit" value="Enviar" name="subscribe" class="button btn btn-xl">
                         </div>
                     </form>
-
-                    <script type="text/javascript">
-                    $('#gformContact').on('submit', function(e) {
-                      $('#gformContact *').fadeOut(1000);
-                      $('#gformContact').prepend('' +
-                          '<div class="clear">' +
-                            '<div class="response text-success text-center" id="mce-success-response"><span>Mensagem enviada! :)</span></div>' +
-                          '</div>');
-                      });
-                    </script>
-
                 </div>
                 <div class="col-md-5 col-lg-5 col-lg-offset-1  bg-darkest-gray">
                     <h4 class="section-heading">Contatos</h4>
