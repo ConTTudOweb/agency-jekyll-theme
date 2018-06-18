@@ -38,6 +38,38 @@ people:
 #    - title: linkedin
 #      url: #
 
+
+# Depoimentos
+depoiments:
+- name: Rita Sene
+  img:
+  description: Esse curso foi um grande aprendizado; procurei aproveitar todas as oportunidades oferecidas. Para minha vida pessoal e profissional foi um passo de crescimento. A convivência com os colegas acrescentou um novo vigor na caminhada da minha vida. Aprendi que a comunicação não é só ler ou falar um texto, é muito mais. Vou sentir falta, pois foi uma grande oportunidade que tive e fico mais feliz porque consegui vencer mais uma etapa da minha vida.
+- name: Bianca Sofia
+  img: bianca_sofia.jpeg
+  description: O curso foi bem interessante, pois através dele aprendi técnicas de como me expressar melhor em uma apresentação, trabalhos ou palestras.
+- name: Giselle Angela
+  img: giselle_angela.jpeg
+  description: O curso de oratória é muito eficaz e interessante para pessoas com dificuldade de falar em público. Aconselho a todas as pessoas fazerem, porque pra mim foi ótimo.
+- name: Eduardo Cavasaki
+  img: eduardo_cavasaki.jpeg
+  description: O curso nos ajudou a desenvolver técnicas para melhor comunicação seja com uma ou várias pessoas. Algumas dessas técnicas são:&nbsp;Posicionamento, andar, gestos, falar com objetivo, controlar os sentimentos e criar alto confiança. Enfim, o curso é excelente e de grande valor para anossa vida social e profissional.
+- name: Stéfani Lopes
+  img: stefani_lopes.jpeg
+  description: O curso de oratória foi muito importante para eu perder o medo de falar em público. Agora é só praticar e confiar em mim. Quero agradecer muito ao professor Vinicius pelo curso e por essa oportunidade.
+- name: Alisson Henrique
+  img: alisson_henrique.jpeg
+  description: Gostei muito do curso, acho de extrema importância a prática e seus métodos. Como o Vinicius diz:&nbsp;A evolução só vem com a experiência.
+- name: Ana Carolina
+  img: ana_carolina.jpeg
+  description: Acredito que esse curso vai me ajudar e está ajudando em muitas situações do dia a dia. Comecei a ver as coisas por outro ângulo, sem contar que ajudou demais na questão do nervosismo, como se comportar em certos locais, entender quem eu sou e como funciono. Achei super interessante o curso, super indico, vai me ajudar bastante na vida profissional, nos trabalhos... vai me ajudar na vida em si. Me senti realizada.
+- name: André Luis
+  img: andre_luis.jpeg
+  description: Ao se referir a evolução posso apontar esse curso como causa. Os sentimentos são trabalhados para que possamos enfrentar nossos medos diante do público. Em resumo o que posso dizer desta experiência é que as ténicas em conjunto com a prática trouxe resultados brilhantes.
+- name: José Kazuo
+  img: jose_kazuo.jpeg
+  description: O curso possibilitou abrir a minha mente sobre muitos assuntos, e de como pequenos gestos causam um grande impacto. Ele também proporciona um controle sobre nossas emoções, técnicas  de como se portar diante do público em palestras e trabalhos. Foi muito trabalhado também a nossa linguagem corporal. Um curso totalmente prático.
+
+
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: twitter
