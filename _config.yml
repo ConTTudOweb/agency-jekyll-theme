@@ -42,7 +42,7 @@ people:
 # Depoimentos
 depoiments:
 - name: Rita Sene
-  img:
+  img: rita_sene.jpeg
   description: Esse curso foi um grande aprendizado; procurei aproveitar todas as oportunidades oferecidas. Para minha vida pessoal e profissional foi um passo de crescimento. A convivência com os colegas acrescentou um novo vigor na caminhada da minha vida. Aprendi que a comunicação não é só ler ou falar um texto, é muito mais. Vou sentir falta, pois foi uma grande oportunidade que tive e fico mais feliz porque consegui vencer mais uma etapa da minha vida.
 - name: Bianca Sofia
   img: bianca_sofia.jpeg
