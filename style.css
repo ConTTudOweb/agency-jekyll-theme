@@ -129,10 +129,14 @@ blockquote {
 
 @media (min-width: 768px) {
     section {
-        padding: 100px 0 !important;
+        padding: 100px 0px 50px !important;
     }
 }
 
 p {
     font-size: 15px !important;
+}
+
+section h2.section-heading-treinamentos {
+    text-decoration: underline;
 }
