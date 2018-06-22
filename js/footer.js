@@ -1,5 +1,4 @@
 $('#gform').on('submit', function (e) {
-    alert('teste');
     $('#gform *').fadeOut(2000);
     $('#gform').prepend('' +
         '<div class="oc-button__form-response">' +
