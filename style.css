@@ -123,3 +123,16 @@ blockquote {
 .lista-depoimentos .carousel-indicators li.active {
     background: #000;
 }
+
+
+/* Reunião com vinicius */
+
+@media (min-width: 768px) {
+    section {
+        padding: 100px 0 !important;
+    }
+}
+
+p {
+    font-size: 15px !important;
+}
