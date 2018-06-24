@@ -1,0 +1,48 @@
+	<div style="width:200px; position:fixed; bottom:20px; right:20px; z-index:9;" class="hidden-xs">
+		<link rel="stylesheet" href="{{ "/chat/css/oc-button.css" | prepend: site.baseurl }}">
+		<style type="text/css">
+            #choice-chat .oc-button__wrapper{
+                font-family:'Raleway',sans-serif
+            }
+            #choice-chat .oc-button__header span{
+                width:170px;
+                margin:-18px 0 0 -75px;
+                padding-left:40px
+            }
+            #choice-chat .oc-button__header span strong{
+                font-family:Arial
+            }
+        </style>
+		<div id="choice-chat" class="oc-button__wrapper">
+
+			<!--<script>window.jQuery||document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"><\/script>')</script>-->
+
+            <!--<script src="assets/js/jquery.min.js"></script>-->
+            <script type="text/javascript">var submitted=false;</script>
+
+
+            <div class="oc-button__content">
+				<div class="oc-button__header">
+					<span>Saiba os valores via<br><strong>WhatsApp</strong><i></i></span>
+				</div>
+				<div class="oc-button__form">
+                    <form name="gform" id="gform" enctype="text/plain"
+                          action="https://docs.google.com/forms/d/e/1FAIpQLSchZ4D_ZXrNQKMfgYNRusdYBbRLqnvX7Y83Hh_WMcT1gP0IQg/formResponse?"
+                          target="hidden_iframe" onsubmit="submitted=true;">
+                        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+
+                        <div class="oc-button__form-inputs" style="display: block;">
+                            <input class="oc-button__input [ oc--name ]" type="text" placeholder="Nome" name="entry.114491322" id="entry.114491322" required>
+                            <input class="oc-button__input [ oc--phone ]" type="text" placeholder="ex.: (99) 99999-9999" name="entry.1243760906" id="entry.1243760906" required>
+                            <!--<button class="oc-button__button">Solicitar atendimento</button>-->
+                            <input type="submit" value="Solicitar atendimento" class="oc-button__button">
+                        </div>
+                        <div class="oc-button__form-response" style="display: none;">
+                            <p></p>
+                        </div>
+                    </form>
+				</div>
+			</div>
+
+		</div>
+	</div>

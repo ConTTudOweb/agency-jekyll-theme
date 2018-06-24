@@ -8,6 +8,10 @@ header {
     /*background-image: url('{{ site.baseurl }}/img/header-bg7.jpg') !important;*/
 }
 
+.equipe header {
+    background-image: url(/img/palestras/header-bg.jpg);
+}
+
 .footer-block {
     padding-top: 5px;
 }

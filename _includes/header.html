@@ -9,8 +9,8 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">
-                    <img src="img/communicare_logo_228x39_white.png" class="img-responsive" alt="{{site.title}}">
+                <a class="navbar-brand page-scroll" href="{% if page.url != '/' %}/{% endif %}#page-top">
+                    <img src="{{ '/img/communicare_logo_228x39_white.png' | prepend: site.baseurl }}" class="img-responsive" alt="{{site.title}}">
                 </a>
             </div>
 
@@ -21,22 +21,16 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#treinamentos">Treinamento</a>
+                        <a class="page-scroll" href="{% if page.url != '/' %}/{% endif %}#treinamentos">Treinamento</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#beneficios">Benefícios</a>
-                    </li>
-                    <!--<li>-->
-                        <!--<a class="page-scroll" href="#eventos">Eventos</a>-->
-                    <!--</li>-->
-                    <!--<li>-->
-                        <!--<a class="page-scroll" href="#equipe">Equipe</a>-->
-                    <!--</li>-->
-                    <li>
-                        <a class="page-scroll" href="#sobre">Sobre Nós</a>
+                        <a class="page-scroll" href="{% if page.url != '/' %}/{% endif %}#beneficios">Benefícios</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contato">Contato</a>
+                        <a class="page-scroll" href="{% if page.url != '/' %}/{% endif %}#sobre">Sobre Nós</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="{% if page.url != '/' %}/{% endif %}#contato">Contato</a>
                     </li>
                 </ul>
             </div>
@@ -44,20 +38,3 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="intro-text">
-                <blockquote class="intro-lead-in" style="text-shadow: 2px 2px 8px #222222; background-color: #222222b3;">
-                    Quer enfrentar seu medo de falar em público?<br>
-                    <span class="">SIM, Você Pode!</span>
-                </blockquote>
-                <blockquote cite="ARISTÓTELES" style="text-shadow: 2px 2px 8px #222222; background-color: #222222b3;">
-                    “Somos o que repetidamente fazemos.<br>A excelência, portanto, não é um feito, mas um hábito”.<br>
-                    <small><i>ARISTÓTELES</i></small>
-                </blockquote>
-                <a href="#treinamentos" class="page-scroll btn btn-lg btn-danger fa-2x">Veja mais...</a>
-            </div>
-        </div>
-    </header>
