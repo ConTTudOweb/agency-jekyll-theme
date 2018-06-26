@@ -1,5 +1,5 @@
-    <section id="sobre" class="bg-light-gray">
-        <div class="container">
+    <section id="sobre" class="">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <!--<h2 class="section-heading">Sobre a Communicare Treinamentos</h2>-->
@@ -7,85 +7,59 @@
                     <!--<h3 class="section-subheading text-muted"></h3>-->
                 </div>
             </div>
-            <div id="gallery" style="overflow: -webkit-paged-y;">
-                <img src="/img/palestras/thumb01.jpeg"
-                    alt=""
-                    title=""
-                    data-desc=""
-                    data-category=""
-                    data-fullsrc="/img/palestras/img01.jpeg" />
-                <img src="/img/palestras/thumb02.jpeg"
-                    alt=""
-                    title=""
-                    data-desc=""
-                    data-category=""
-                    data-fullsrc="/img/palestras/img02.jpeg" />
-                <img src="/img/palestras/thumb03.jpeg"
-                    alt=""
-                    title=""
-                    data-desc=""
-                    data-category=""
-                    data-fullsrc="/img/palestras/img03.jpeg" />
-                <img src="/img/palestras/thumb04.jpeg"
-                    alt=""
-                    title=""
-                    data-desc=""
-                    data-category=""
-                    data-fullsrc="/img/palestras/img04.jpeg" />
-                <img src="/img/palestras/thumb06.jpeg"
-                    alt=""
-                    title=""
-                    data-desc=""
-                    data-category=""
-                    data-fullsrc="/img/palestras/img06.jpeg" />
-                <img src="/img/palestras/thumb07.jpeg"
-                    alt=""
-                    title=""
-                    data-desc=""
-                    data-category=""
-                    data-fullsrc="/img/palestras/img07.jpeg" />
-                <img src="/img/palestras/thumb08.jpeg"
-                    alt=""
-                    title=""
-                    data-desc=""
-                    data-category=""
-                    data-fullsrc="/img/palestras/img08.jpeg" />
-                <img src="/img/palestras/thumb09.jpeg"
-                    alt=""
-                    title=""
-                    data-desc=""
-                    data-category=""
-                    data-fullsrc="/img/palestras/img09.jpeg" />
-                <img src="/img/palestras/thumb10.jpeg"
-                    alt=""
-                    title=""
-                    data-desc=""
-                    data-category=""
-                    data-fullsrc="/img/palestras/img10.jpeg" />
-                <img src="/img/palestras/thumb11.jpeg"
-                    alt=""
-                    title=""
-                    data-desc=""
-                    data-category=""
-                    data-fullsrc="/img/palestras/img11.jpeg" />
-                <img src="/img/palestras/thumb12.jpeg"
-                    alt=""
-                    title=""
-                    data-desc=""
-                    data-category=""
-                    data-fullsrc="/img/palestras/img12.jpeg" />
-                <img src="/img/palestras/thumb13.jpeg"
-                    alt=""
-                    title=""
-                    data-desc=""
-                    data-category=""
-                    data-fullsrc="/img/palestras/img13.jpeg" />
-                <img src="/img/palestras/thumb14.jpeg"
-                    alt=""
-                    title=""
-                    data-desc=""
-                    data-category=""
-                    data-fullsrc="/img/palestras/img14.jpeg" />
+            <div id="gallery" style="overflow: -webkit-paged-y; padding-bottom: 10px;" class="bg-light-gray">
+
+                {% include _image_gallery.html
+                src="/img/palestras/thumb01.jpeg"
+                data-fullsrc="/img/palestras/img01.jpeg"%}
+
+                {% include _image_gallery.html
+                src="/img/palestras/thumb02.jpeg"
+                data-fullsrc="/img/palestras/img02.jpeg"%}
+
+                {% include _image_gallery.html
+                src="/img/palestras/thumb03.jpeg"
+                data-fullsrc="/img/palestras/img03.jpeg"%}
+
+                {% include _image_gallery.html
+                src="/img/palestras/thumb04.jpeg"
+                data-fullsrc="/img/palestras/img04.jpeg"%}
+
+                {% include _image_gallery.html
+                src="/img/palestras/thumb06.jpeg"
+                data-fullsrc="/img/palestras/img06.jpeg"%}
+
+                {% include _image_gallery.html
+                src="/img/palestras/thumb07.jpeg"
+                data-fullsrc="/img/palestras/img07.jpeg"%}
+
+                {% include _image_gallery.html
+                src="/img/palestras/thumb08.jpeg"
+                data-fullsrc="/img/palestras/img08.jpeg"%}
+
+                {% include _image_gallery.html
+                src="/img/palestras/thumb09.jpeg"
+                data-fullsrc="/img/palestras/img09.jpeg"%}
+
+                {% include _image_gallery.html
+                src="/img/palestras/thumb11.jpeg"
+                data-fullsrc="/img/palestras/img11.jpeg"%}
+
+                {% include _image_gallery.html
+                src="/img/palestras/thumb10.jpeg"
+                data-fullsrc="/img/palestras/img10.jpeg"%}
+
+                {% include _image_gallery.html
+                src="/img/palestras/thumb12.jpeg"
+                data-fullsrc="/img/palestras/img12.jpeg"%}
+
+                {% include _image_gallery.html
+                src="/img/palestras/thumb13.jpeg"
+                data-fullsrc="/img/palestras/img13.jpeg"%}
+
+                {% include _image_gallery.html
+                src="/img/palestras/thumb14.jpeg"
+                data-fullsrc="/img/palestras/img14.jpeg"%}
             </div>
         </div>
     </section>
