@@ -7,11 +7,43 @@
     <body id="page-top" class="equipe">
 
     {% include header.html %}
-    {% include header-index.html %}
+    {% include header-vinicius.html %}
     {% include vinicius-campos.html %}
     {% include footer.html %}
     {% include modals.html %}
     {% include js.html %}
+
+    <!--http://vodkabears.github.io/galereya/-->
+    <script src="{{ '/galereya/js/jquery.galereya.min.js' | prepend: site.baseurl }}"></script>
+    <script>
+        $(function() {
+            $('#gallery').galereya({
+                // spacing between cells of the masonry grid
+                spacing: 0,
+
+                // waving visual effect
+                wave: false,
+
+                // waving visual effect timeout duration
+                waveTimeout: 300,
+
+                // special CSS modifier for the gallery
+                modifier: '',
+
+                // speed of the slide show
+                slideShowSpeed: 10000,
+
+                // speed of appearance of cells
+                cellFadeInSpeed: 200,
+
+                // the name of the general category
+                noCategoryName: 'all',
+
+                // set to true, if you don't want to show the slider on a cell click.
+                disableSliderOnClick: false
+            });
+        });
+    </script>
 
     </body>
 </html>
