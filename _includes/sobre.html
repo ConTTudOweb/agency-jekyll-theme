@@ -32,8 +32,9 @@
                     <p class="large text-muted">
                         {{ member.description | newline_to_br }}
                     </p>
+                    <hr>
                     {% if member.page %}
-                    <a href="/{{ member.page }}">Click aqui e conheça mais sobre {{ member.name }}</a>
+                    <a href="/{{ member.page }}"><span class="text-black text-underline">Click aqui e conheça mais sobre {{ member.name }}</span></a>
                     {% endif %}
                 </div>
                 {% endfor %}

@@ -146,9 +146,17 @@ section h2.section-heading-treinamentos {
 }
 
 .form-contact input, .form-contact textarea {
-    color: #000;
+    color: #000000;
 }
 
 section#contato .form-group textarea.form-control {
     height: auto !important;
+}
+
+.text-black {
+    color: #000000;
+}
+
+.text-underline {
+    text-decoration: underline;
 }
