@@ -14,17 +14,59 @@
                 </a>
             </div>
 
+            <style>
+            /*.dropdown {*/
+                /*position: relative;*/
+                /*display: inline-block;*/
+            /*}*/
+
+            .dropdown-content {
+                display: none;
+                /*position: absolute;*/
+                /*background-color: #f9f9f9;*/
+                /*min-width: 160px;*/
+                /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
+                /*padding: 12px 16px;*/
+                /*z-index: 1;*/
+            }
+
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+            </style>
+
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="{% if page.url != '/' %}/{% endif %}#treinamentos">Treinamento</a>
+                    <li class="dropdown">
+                        <a class="page-scroll" href="{% if page.url != '/' %}/{% endif %}#treinamentos">
+                            Treinamento
+                        </a>
+                        <ul class="dropdown-menu dropdown-content navbar-dark">
+                            <li><a class="page-scroll" href="{% if page.url != '/' %}/{% endif %}#ementa">Ementa</a></li>
+                            <li><a class="page-scroll" href="{% if page.url != '/' %}/{% endif %}#beneficios">Benefícios</a></li>
+                        </ul>
                     </li>
+                    <!--<li class="dropdown">-->
+                        <!--<a data-target="#" data-toggle="dropdown" class="page-scroll dropdown-toggle" href="{% if page.url != '/' %}/{% endif %}#treinamentos">-->
+                            <!--Treinamento <b class="caret"></b>-->
+                        <!--</a>-->
+                        <!--<ul class="dropdown-menu navbar-dark">-->
+                            <!--<li><a href="#">Action</a></li>-->
+                            <!--<li><a href="#">Another action</a></li>-->
+                        <!--</ul>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<a class="page-scroll" href="{% if page.url != '/' %}/{% endif %}#ementa">Ementa</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<a class="page-scroll" href="{% if page.url != '/' %}/{% endif %}#beneficios">Benefícios</a>-->
+                    <!--</li>-->
                     <li>
-                        <a class="page-scroll" href="{% if page.url != '/' %}/{% endif %}#beneficios">Benefícios</a>
+                        <a class="page-scroll" href="{% if page.url != '/' %}/{% endif %}#depoimentos">Depoimentos</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="{% if page.url != '/' %}/{% endif %}#sobre">Sobre Nós</a>
