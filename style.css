@@ -160,3 +160,7 @@ section#contato .form-group textarea.form-control {
 .text-underline {
     text-decoration: underline;
 }
+
+.text-white {
+    color: #ffffff;
+}
