@@ -10,27 +10,14 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="page-scroll" href="{% if page.url != '/' %}/{% endif %}#page-top">
-                    <!--<img src="{{ '/img/communicare_logo_228x39_white.png' | prepend: site.baseurl }}" class="img-responsive" alt="{{site.title}}">-->
                     <img src="{{ '/img/Lg_10_T.png' | prepend: site.baseurl }}" class="img-responsive" alt="{{site.title}}" style="max-height: 59px;">
                 </a>
             </div>
 
             <style>
-            /*.dropdown {*/
-                /*position: relative;*/
-                /*display: inline-block;*/
-            /*}*/
-
             .dropdown-content {
                 display: none;
-                /*position: absolute;*/
-                /*background-color: #f9f9f9;*/
-                /*min-width: 160px;*/
-                /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
-                /*padding: 12px 16px;*/
-                /*z-index: 1;*/
             }
-
             .dropdown:hover .dropdown-content {
                 display: block;
             }
@@ -42,15 +29,6 @@
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
-                    <!--<li class="dropdown">-->
-                        <!--<a class="page-scroll" href="{% if page.url != '/' %}/{% endif %}#treinamentos">-->
-                            <!--Treinamento-->
-                        <!--</a>-->
-                        <!--<ul class="dropdown-menu dropdown-content navbar-dark">-->
-                            <!--<li><a class="page-scroll" href="{% if page.url != '/' %}/{% endif %}#ementa">Ementa</a></li>-->
-                            <!--<li><a class="page-scroll" href="{% if page.url != '/' %}/{% endif %}#beneficios">Benefícios</a></li>-->
-                        <!--</ul>-->
-                    <!--</li>-->
                     <li class="dropdown">
                         <a class="page-scroll" href="{% if page.url != '/' %}/{% endif %}#treinamentos">Treinamento</a>
                     </li>
@@ -60,9 +38,6 @@
                     <li>
                         <a class="page-scroll" href="{% if page.url != '/' %}/{% endif %}#beneficios">Benefícios</a>
                     </li>
-                    <!--<li>-->
-                        <!--<a class="page-scroll" href="{% if page.url != '/' %}/{% endif %}#depoimentos">Depoimentos</a>-->
-                    <!--</li>-->
                     <li>
                         <a class="page-scroll" href="{% if page.url != '/' %}/{% endif %}#sobre">Sobre Nós</a>
                     </li>

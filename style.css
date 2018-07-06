@@ -5,7 +5,6 @@ layout: style
 header {
     opacity: 0.9;
     background-position: top center;
-    /*background-image: url('{{ site.baseurl }}/img/header-bg7.jpg') !important;*/
 }
 
 .equipe header {
@@ -29,7 +28,7 @@ header {
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
     transition: 0.3s;
-    border-radius: 5px; /* 5px rounded corners */
+    border-radius: 5px;
 }
 
 /* On mouse-over, add a deeper shadow */
@@ -43,8 +42,6 @@ header {
 }
 
 .card-dark-gradiente {
-    /*background-color: darkgray;*/
-    /*background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);*/
     background: linear-gradient(141deg, #e1e6ea 0%, #d9dee2 51%, #bec3c7 75%);
 }
 
@@ -89,11 +86,9 @@ blockquote {
     font-size: 15px;
     line-height: 22px;
     font-weight: 500;
-    /*color: #fff;*/
 }
 
 .lista-depoimentos .item table td hr {
-    /*border-top: solid 4px #fff;*/
     width: 40px;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -103,7 +98,6 @@ blockquote {
 .lista-depoimentos .item table td h3 {
     font-size: 15px;
     font-weight: 800;
-    /*color: #fff;*/
     margin-top: 0;
     margin-bottom: 0;
 }
