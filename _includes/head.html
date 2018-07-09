@@ -23,10 +23,10 @@
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <!--<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>-->
     <meta name="viewport" content="width=device-width">
-    <meta name="description" content="{{ site.description }}">
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <!--<meta name="description" content="{{ site.description }}">-->
+    <!--<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">-->
 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -62,4 +62,6 @@
     <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="e0832ee0-dbd7-4d0e-90de-09e791db1801" type="text/javascript" async></script>
 
     <script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=5b241481d4efc40011702d92&product=social-ab' async='async'></script>
+
+    {% seo %}
 </head>
