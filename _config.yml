@@ -5,7 +5,9 @@ baseurl:
 title: Communicare Treinamentos
 site_link: www.communicaretreinamentos.com.br
 email: contato@communicaretreinamentos.com.br
-description: "Centro de Treinamentos Communicare em Apucarana."
+description: "Centro de Treinamento em Comunicação e Oratória"
+image: /img/Lg_.png
+lang: pt-br
 
 
 # Team names, titles and social links
@@ -109,3 +111,8 @@ permalink: pretty
 
 plugins:
   - jekyll-seo-tag
+
+twitter:
+  username: CommunicareBR
+  card: summary
+  image: /img/Lg_.png
