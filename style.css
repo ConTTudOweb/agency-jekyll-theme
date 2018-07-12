@@ -158,3 +158,22 @@ section#contato .form-group textarea.form-control {
 .text-white {
     color: #ffffff;
 }
+
+
+@media (min-width: 768px) {
+    .timeline > li .timeline-btn {
+        margin-top: 35px;
+    }
+}
+
+@media (min-width: 992px) {
+    .timeline>li .timeline-btn {
+        margin-top: 60px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .timeline > li .timeline-btn {
+        margin-top: 70px;
+    }
+}
