@@ -1,13 +1,15 @@
-url: http://communicaretreinamentos.com.br
-baseurl:
+baseurl: ""
 
 # Site settings
+
+url: "https://communicaretreinamentos.com.br"
+lang: pt-br
+author: ConTTudOweb
 title: Communicare Treinamentos
 site_link: www.communicaretreinamentos.com.br
 email: contato@communicaretreinamentos.com.br
-description: "Centro de Treinamento em Comunicação e Oratória"
 image: /img/Lg_.png
-lang: pt-br
+
 
 
 # Team names, titles and social links

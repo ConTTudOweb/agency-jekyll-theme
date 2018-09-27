@@ -60,5 +60,9 @@
 
     <script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=5b241481d4efc40011702d92&product=social-ab' async='async'></script>
 
-    {% seo %}
+    {%- include seo.html -%}
+    {% if page.keywords %}
+      <meta name="keywords" content="{{ page.keywords }}">
+    {% endif %}
+
 </head>
