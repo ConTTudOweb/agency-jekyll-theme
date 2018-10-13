@@ -1,11 +1,15 @@
 <div class="col-sm-6">
     <div class="card text-center" style="padding: 15px;">
-        <img class="card-img-top img-responsive" src="{{ include.img-src }}" alt="{{ include.img-alt }}">
+        <a href="{{ include.link }}">
+            <img class="card-img-top img-responsive" src="{{ include.img-src }}" alt="{{ include.img-alt }}">
+        </a>
         <div class="card-header">
-            {{ include.card-header }}
+            <!--{{ include.card-header }}-->
         </div>
         <div class="card-body">
-            <h5 class="card-title text-primary">{{ include.card-title }}</h5>
+            <a href="{{ include.link }}">
+                <h5 class="card-title text-primary">{{ include.card-title }}</h5>
+            </a>
             <p class="card-text text-justify text-muted">
                 {{ include.card-text }}
             </p>
