@@ -118,3 +118,11 @@ twitter:
   username: CommunicareBR
   card: summary
   image: /img/Lg_.png
+
+carousel:
+  - img: slide_treinamento_de_oratoria.png
+    alt: ''
+    link: /treinamento-de-oratoria
+  - img: slide_curso_de_hipnose.png
+    alt: ''
+    link: /curso-de-hipnose

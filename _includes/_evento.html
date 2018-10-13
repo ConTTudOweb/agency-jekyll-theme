@@ -1,0 +1,60 @@
+<li class="{{ include.li-class }}">
+    <div class="timeline-image">
+        <img class="img-circle img-responsive" src="{{ include.img-src }}" alt="{{ include.img-alt }}">
+    </div>
+    <div class="timeline-panel {% if include.lotado %}lotado_old{% endif %}">
+        <div class="timeline-heading">
+            <h4><u>{{ include.title }}</u></h4>
+            <h5>{{ include.turma }}</h5>
+            <h4 class="subheading">
+                {{ include.local-nome }}<br>
+                <small>
+                    <strong>
+                        {{ include.local-endereco }}<br>
+                        {{ include.local-cidade }}
+                    </strong>
+                    {% if include.local-mapa %}<br>
+                    <a target="_blank"
+                    href="{{ include.local-mapa }}">
+                        Ver no mapa
+                    </a>{% endif %}
+                </small>
+            </h4>
+        </div>
+        <div class="timeline-body">
+            <p class="text-muted">Dias {{ include.dias }}<br>Das {{ include.horario }}.</p>
+        </div>
+    </div>
+    <div class="timeline-panel timeline-btn">
+        {% if include.material-link == null %}
+            <a class="btn btn-primary {% if include.inscricao-link == null %}disabled{% endif %}"
+               target="_blank"
+               href="{{ include.inscricao-link }}"
+            >
+                {% if include.inscricao-link == null %}<strike>{% endif %}
+                    <i class="fa fa-check"></i> Inscrever-se
+                {% if include.inscricao-link == null %}</strike>{% endif %}
+            </a>
+            <br><br>
+            {% if include.inscricao-link == null %}
+            <span class="text-danger"><strong>VAGAS ESGOTADAS!</strong></span>
+            {% else %}
+            <span class="text-danger"><strong>Inscrições Limitadas!</strong></span>
+            {% endif %}
+        {% else %}
+            <a class="btn btn-primary" onclick="openMaterial('{{ include.material-link }}')">
+                <i class="fa fa-download"></i> <small>Download do material</small>
+            </a>
+        {% endif %}
+
+        {% if include.encerramento %}
+            {% capture site_time %}{{site.time | date: '%s'}}{% endcapture %}
+            {% assign site_time = site_time | plus: 0 %}
+            {% capture include_encerramento %}{{include.encerramento | date: '%s'}}{% endcapture %}
+            {% assign include_encerramento = include_encerramento | plus: 0 %}
+            {% if include_encerramento < site_time %}
+            <br><br><span class="text-danger"><strong>TREINAMENTO ENCERRADO!</strong></span>
+            {% endif %}
+        {% endif %}
+    </div>
+</li>

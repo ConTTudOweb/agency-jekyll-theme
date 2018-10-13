@@ -1,16 +1,82 @@
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="intro-text">
-                <blockquote class="intro-lead-in" style="text-shadow: 2px 2px 8px #222222; background-color: #222222b3;">
-                    Quer enfrentar seu medo de falar em público?<br>
-                    <span class="">SIM, Você Pode!</span>
-                </blockquote>
-                <blockquote cite="ARISTÓTELES" style="text-shadow: 2px 2px 8px #222222; background-color: #222222b3;">
-                    “Somos o que repetidamente fazemos.<br>A excelência, portanto, não é um feito, mas um hábito”.<br>
-                    <small><i>ARISTÓTELES</i></small>
-                </blockquote>
-                <a href="#treinamentos" class="page-scroll btn btn-lg btn-danger fa-2x">Veja mais...</a>
-            </div>
-        </div>
-    </header>
+<!-- Header -->
+<!--<header>-->
+    <!--<div class="container">-->
+        <!--<div class="intro-text">-->
+            <!--<blockquote class="intro-lead-in" style="text-shadow: 2px 2px 8px #222222; background-color: #222222b3;">-->
+                <!--Quer enfrentar seu medo de falar em público?<br>-->
+                <!--<span class="">SIM, Você Pode!</span>-->
+            <!--</blockquote>-->
+            <!--<blockquote cite="ARISTÓTELES" style="text-shadow: 2px 2px 8px #222222; background-color: #222222b3;">-->
+                <!--“Somos o que repetidamente fazemos.<br>A excelência, portanto, não é um feito, mas um hábito”.<br>-->
+                <!--<small><i>ARISTÓTELES</i></small>-->
+            <!--</blockquote>-->
+            <!--<a href="/treinamento-de-oratoria" class="page-scroll btn btn-lg btn-danger fa-2x">Veja mais...</a>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</header>-->
+
+<!--<div class="carousel-item">-->
+    <!--<img src="..." alt="...">-->
+    <!--<div class="carousel-caption d-none d-md-block">-->
+        <!--<h5>...</h5>-->
+        <!--<p>...</p>-->
+    <!--</div>-->
+<!--</div>-->
+
+<div id="carousel-index" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <!--<li data-target="#carousel-index" data-slide-to="0" class="active"></li>-->
+    <!--<li data-target="#carousel-index" data-slide-to="1"></li>-->
+
+    {% for item in site.carousel %}
+    <li data-target="#carousel-index" data-slide-to="{{ forloop.index0 }}" class="{% if forloop.first %}active{% endif %}"></li>
+    {% endfor %}
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+
+    <!--<div class="item active">-->
+      <!--<img class="img-responsive img-centered" src="img/slides/slide_treinamento_de_oratoria.png" alt="...">-->
+      <!--<div class="carousel-caption">-->
+        <!--<blockquote class="intro-lead-in" style="text-shadow: 2px 2px 8px #222222; background-color: #222222b3;">-->
+            <!--<h3>Treinamento de Oratória</h3>-->
+            <!--Quer enfrentar seu medo de falar em público?<br>-->
+            <!--<span class="">SIM, Você Pode!</span>-->
+        <!--</blockquote>-->
+        <!--<blockquote cite="ARISTÓTELES" style="text-shadow: 2px 2px 8px #222222; background-color: #222222b3;">-->
+            <!--“Somos o que repetidamente fazemos.<br>A excelência, portanto, não é um feito, mas um hábito”.<br>-->
+            <!--<small><i>ARISTÓTELES</i></small>-->
+        <!--</blockquote>-->
+        <!--<p><a href="/treinamento-de-oratoria" class="page-scroll btn btn-lg btn-danger fa-2x">Veja mais...</a></p>-->
+      <!--</div>-->
+    <!--</div>-->
+
+    {% for item in site.carousel %}
+
+    <div class="item {% if forloop.first %}active{% endif %}">
+      <a href="{{item.link}}">
+        <img class="img-responsive img-centered" src="img/slides/{{item.img}}" alt="{{item.alt}}">
+      </a>
+      <!--<div class="carousel-caption">-->
+        <!--{% if item.link %}-->
+        <!--<p><a href="{{item.link}}" class="page-scroll btn btn-lg btn-danger fa-2x">Veja mais...</a></p>-->
+        <!--{% endif %}-->
+      <!--</div>-->
+    </div>
+
+    {% endfor %}
+
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-index" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Anterior</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-index" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Próximo</span>
+  </a>
+</div>

@@ -15,7 +15,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <span class="icon-bar"></span>
                 </button>
                 <a class="page-scroll" href="{% if page.url != '/' %}/{% endif %}#page-top">
-                    <img src="{{ '/img/logo_header_outubro_rosa.png' | prepend: site.baseurl }}" class="img-responsive" alt="{{site.title}}" style="max-height: 59px;">
+                    {% assign logo = "logo_header.png" %}
+
+                    {% capture month %}{{site.time | date: "%m"}}{% endcapture %}
+                    {% if month == "10" %}
+                        {% assign logo = "logo_header_outubro_rosa.png" %}
+                    {% endif %}
+
+                    <img src="{{ '/img/' | append: logo | prepend: site.baseurl }}"
+                         class="img-responsive" alt="{{site.title}}" style="max-height: 59px;">
                 </a>
             </div>
 
@@ -35,14 +43,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <a href="#page-top"></a>
                     </li>
                     <li class="dropdown">
-                        <a class="page-scroll" href="{% if page.url != '/' %}/{% endif %}#treinamentos">Treinamento</a>
+                        <a class="page-scroll" href="{% if page.url != '/' %}/{% endif %}#treinamentos">Cursos e Treinamentos</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="{% if page.url != '/' %}/{% endif %}#ementa">Ementa</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="{% if page.url != '/' %}/{% endif %}#beneficios">Benefícios</a>
-                    </li>
+                    <!--<li>-->
+                        <!--<a class="page-scroll" href="{% if page.url != '/' %}/{% endif %}#ementa">Ementa</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<a class="page-scroll" href="{% if page.url != '/' %}/{% endif %}#beneficios">Benefícios</a>-->
+                    <!--</li>-->
                     <li>
                         <a class="page-scroll" href="{% if page.url != '/' %}/{% endif %}#eventos">Agenda</a>
                     </li>

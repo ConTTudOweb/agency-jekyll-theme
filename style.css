@@ -11,6 +11,21 @@ header {
     background-image: url(/img/palestras/header-bg.jpg);
 }
 
+/*header[class=oratoria] {*/
+    /*background-image: url(/img/slides/slide_treinamento_de_oratoria_page.png);*/
+/*}*/
+
+header[class=hipnose] {
+    background-image: url(/img/slides/slide_curso_de_hipnose_page.png);
+}
+
+.lotado{
+    background-image:linear-gradient( rgba(255,255,255,.7) 0%,rgba(255,255,255,.8) 100%), url("/img/inscricoes-encerradas.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
 .footer-block {
     padding-top: 5px;
 }
@@ -175,5 +190,23 @@ section#contato .form-group textarea.form-control {
 @media (min-width: 1200px) {
     .timeline > li .timeline-btn {
         margin-top: 70px;
+    }
+}
+
+/*---*/
+@media (min-width: 768px) {
+    .row.flex {
+        display: flex;
+    }
+
+    .row.flex > div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
     }
 }
