@@ -21,6 +21,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     {% if month == "10" %}
                         {% assign logo = "logo_header_outubro_rosa.png" %}
                     {% endif %}
+                    {% if month == "11" %}
+                        {% assign logo = "logo_header_novembro_azul.png" %}
+                    {% endif %}
 
                     <img src="{{ '/img/' | append: logo | prepend: site.baseurl }}"
                          class="img-responsive" alt="{{site.title}}" style="max-height: 59px;">
