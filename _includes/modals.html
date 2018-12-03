@@ -116,6 +116,8 @@
                 openMaterialTurma_10_2018_Ora();
             } else if (codigo == 'TM112018HIP') {
                 openMaterialTurma_11_2018_Hip();
+            } else if (codigo == 'TM122018ORA') {
+                openMaterialTurma_12_2018_Ora();
             }
         }
         // function openMaterialTurma_09_2018_Ora(){
@@ -138,6 +140,14 @@
             pwd = prompt(" Digite o código: ");
             if (MD5(pwd) == '51f63c149934451c4c939ecdc4978919') {
                 $('#mt112018hip').modal();
+            } else {
+                alert('Código incorreto!');
+            }
+        }
+        function openMaterialTurma_12_2018_Ora(){
+            pwd = prompt(" Digite o código: ");
+            if (MD5(pwd) == '6840669215ef28b79f2ca17d2d9ba7ae') {
+                $('#mt122018ora').modal();
             } else {
                 alert('Código incorreto!');
             }
@@ -257,6 +267,49 @@
                                 <a href="https://drive.google.com/file/d/1_YD6bx5dJllHfghekrp8x15HNsmRAMbp/view?usp=sharing"
                                    target="_blank" rel="nofollow">Apresentação</a>
                             </p>
+
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="mt122018ora" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body text-justify">
+                            <h2>Material para download <i class="fa fa-download"></i></h2>
+                            <hr class="star-primary">
+                            <h3>Aula 01 - 01/12/2018</h3>
+                            <p>
+                                <i class="fa fa-file"></i>
+                                <a href="https://drive.google.com/file/d/1PiHg9OF2K_VX1_IAUr7esdCPflAHzWu5/view?usp=sharing"
+                                   target="_blank" rel="nofollow">Apresentação</a>
+                            </p>
+                            <!--<br>-->
+                            <!--<h3>Aula 02 - 08/12/2018</h3>-->
+                            <!--<p>-->
+                                <!--<i class="fa fa-file"></i>-->
+                                <!--<a href="https://drive.google.com/file/d/1qnn-2rGD7s1IN0cyBr_-AY7c1P2sFIcO/view?usp=sharing"-->
+                                   <!--target="_blank" rel="nofollow">Apresentação</a>-->
+                            <!--</p>-->
+                            <!--<br>-->
+                            <!--<h3>Aula 03 - 15/12/2018</h3>-->
+                            <!--<p>-->
+                                <!--<i class="fa fa-file"></i>-->
+                                <!--<a href="https://drive.google.com/file/d/1KrhTB2dOzkP5QggwNFkg5h0h9a-Cvl6j/view?usp=sharing"-->
+                                   <!--target="_blank" rel="nofollow">Apresentação</a>-->
+                            <!--</p>-->
 
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Fechar</button>
                         </div>
